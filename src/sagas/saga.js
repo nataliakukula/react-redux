@@ -7,7 +7,7 @@ function* increseAgeAsync(){
 }
 
 // * - function generator
-// I want to observe every sigle action that gets dispatched
+// To observe every sigle action that gets dispatched
 export function* watchIncreseAge(){
   //takeLatest provides debounce capability
   yield takeLatest("INCRESE AGE", increseAgeAsync);
